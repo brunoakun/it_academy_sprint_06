@@ -14,3 +14,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 3. Fent servir la directiva ngFor en el component Escena hauràs de renderitzar totes les frases en un llistat.
 ## Ejercicio 3
 És moment d'aplicar estils al nostre component Escena. Has de maquetar aquest component, ha de quedar així:
+## Ejercicio 4
+Mostrarem totes les línies de l'aplicació i marcarem amb destacarem la frase actual a mesura que cliquem els botons d'avançar o retrocedir:
+
+Ajuda: Hauràs de crear dos mètodes: prev i next en el component Escena que modifiqui una variable currentSentence, que és la que controla en quina frase estem.
+
+Utilitzant aquesta variable hauràs de variar l'estil de la línia pertinent en el llistat que forma part del ngFor.
+ 
+ Per saber més
+Sobre com aplicar un ngClass dins d'un ngFor.->Angular 2, using ngClass with conditionals in ngFor
