@@ -9,7 +9,7 @@
         </p>
     -->
 
-        <div class="row">
+        <div class="row ms-2 me-2">
 
             <div class="d-grid col-6 mt-2 mx-auto">
                 <button class="btn btn-secondary" type="button" (click)="anterior()">Anterior</button>
@@ -22,7 +22,7 @@
 
         <div class="row">
             <span *ngFor="let frase of frases">
-                <div class="col ms-2 me-2">
+                <div class="col ms-5 me-5">
                     <div class="card mt-3 opacity-75"
                         [ngClass]="{'seleccionada': (frase.id==currentSentence), 'noSeleccionada': !(frase.id==currentSentence)}">
                         <div class="card-body ">
