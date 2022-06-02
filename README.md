@@ -23,3 +23,7 @@ Utilitzant aquesta variable hauràs de variar l'estil de la línia pertinent en 
  
  Per saber més
 Sobre com aplicar un ngClass dins d'un ngFor.->Angular 2, using ngClass with conditionals in ngFor
+## Ejercicio 5
+Seria convenient mostrar a l'usuari/ària una pantalla inicial de benvinguda, que contingui la descripció del projecte i un botó començar. En aquest exercici has d'utilitzar el ngIf per fer-ho.
+
+Ajuda: Com implementar el renderitzat condicional amb el ngIf? Mitjançant una variable del component principal Home, que es modificarà mitjançant el botó començar. Utilitzant aquesta variable (que canvia amb el botó), podràs implementar un ngIf que mostri o oculti el component fill Escena.

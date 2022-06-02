@@ -1,5 +1,5 @@
-<p>variable definida en el padre, <i>home.ts</i>: <b>{{saludo}}</b> y mostrada desde el hijo <i>escena.html</i></p>
-<p>currentSentence={{currentSentence}}</p>
+<p>variable definida en el padre, <i>home.ts</i>: <b>{{saludo}}</b> y mostrada desde el hijo <i>escena.html</i><br>
+    currentSentence={{currentSentence}}</p>
 
 <div class="row">
 
@@ -11,11 +11,12 @@
     </div>
 
 </div>
-<span *ngFor="let frase of frases">
 
+<span *ngFor="let frase of frases">
     <div class="card mt-3 "
-        [ngClass]="{'seleccionada': frase.id==currentSentence, 'noSeleccionada': !(frase.id==currentSentence)}">
+        [ngClass]="{'seleccionada': (frase.id==currentSentence), 'noSeleccionada': !(frase.id==currentSentence)}">
         <div class="card-body ">
             {{frase.texto}}
         </div>
     </div>
+</span>

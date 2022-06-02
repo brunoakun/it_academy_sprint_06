@@ -8,6 +8,9 @@
 
 .btn {
     border-radius: 0%;
+    color:black;
+    background-color: rgb(195, 201, 201);
+    height: 60px;
 }
 
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 export interface IFrase {   // Definir la Interface para frase
   id: number;
-  texto: string; 
+  texto: string;
 }
 
 
@@ -15,10 +15,9 @@ export interface IFrase {   // Definir la Interface para frase
 
 export class HomeComponent implements OnInit {
 
-  
-
-
+  // Propiedades
   saludoHome = 'valor desde el padre';
+  primeravez: boolean = true;
 
   frasesHome = [
     {
@@ -39,10 +38,16 @@ export class HomeComponent implements OnInit {
     }
   ];
 
+  // Constructor
   constructor() { }
 
+  // Métodos
   ngOnInit(): void {
+    this.primeravez = true;
   }
 
+  primeraVez(): void {
+    this.primeravez = false;
+  }
 }
 

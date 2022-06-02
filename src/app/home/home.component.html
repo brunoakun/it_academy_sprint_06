@@ -1,2 +1,27 @@
+<ng-template [ngIf]="primeravez">
 
-<app-escena [saludo]="saludoHome"  [frases]="frasesHome" ></app-escena>
+    <div class="container-fluid mt-3 d-flex justify-content-center">
+
+        <div class="col-6 ">
+            <div class="card ">
+                <div class="card-header  ">Pantalla inicial de benvinguda, que contingui la descripció del projecte:
+                </div>
+                <div class="card-body  ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia autem,
+                    praesentium
+                    laboriosam sint est quibusdam. Amet, distinctio neque. Ab ducimus commodi molestias. Eum hic fugit
+                    vel
+                    quod ipsa tenetur perferendis!</div>
+                <div class="card-footer  "><input class="btn btn-success" type="button" value="Empezar"
+                        (click)="primeraVez()"></div>
+            </div>
+        </div>
+
+    </div>
+</ng-template>
+
+
+
+
+<ng-template [ngIf]="!primeravez">
+    <app-escena [saludo]="saludoHome" [frases]="frasesHome"></app-escena>
+</ng-template>
