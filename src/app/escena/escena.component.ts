@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { IFrase } from '../home/home.component';
 
 @Component({
   selector: 'app-escena',
@@ -7,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class EscenaComponent implements OnInit {
   @Input() saludo: string = '';   // decorate the property with @Input()
-  @Input() frases: any[] = [];    // Le pasamos los valores desde el padre 'home.ts'
+  @Input() frases: IFrase[] = [];    // Le pasamos los valores desde el padre 'home.ts'
 
   constructor() { }
 

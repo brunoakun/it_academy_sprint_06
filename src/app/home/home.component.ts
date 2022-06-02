@@ -1,11 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+export interface IFrase {   // Definir la Interface para frase
+  id: number;
+  texto: string; 
+}
+
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
+
+
 export class HomeComponent implements OnInit {
+
+  
+
 
   saludoHome = 'valor desde el padre';
 
@@ -34,3 +45,4 @@ export class HomeComponent implements OnInit {
   }
 
 }
+
