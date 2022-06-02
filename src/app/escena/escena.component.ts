@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-escena',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./escena.component.css']
 })
 export class EscenaComponent implements OnInit {
+  @Input() saludo: string = '';   // decorate the property with @Input()
+  @Input() frases: any[] = [];    // Le pasamos los valores desde el padre 'home.ts'
 
   constructor() { }
 
