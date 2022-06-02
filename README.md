@@ -27,3 +27,14 @@ Sobre com aplicar un ngClass dins d'un ngFor.->Angular 2, using ngClass with con
 Seria convenient mostrar a l'usuari/ària una pantalla inicial de benvinguda, que contingui la descripció del projecte i un botó començar. En aquest exercici has d'utilitzar el ngIf per fer-ho.
 
 Ajuda: Com implementar el renderitzat condicional amb el ngIf? Mitjançant una variable del component principal Home, que es modificarà mitjançant el botó començar. Utilitzant aquesta variable (que canvia amb el botó), podràs implementar un ngIf que mostri o oculti el component fill Escena.
+
+## Ejercicio 6
+Per finalitzar, necessitaràs modificar la imatge de fons segons l'usuari/ària canviï de frase. 
+Modifica la interfície i crea un array d'objectes. Cada objecte tindrà dues propietats: txt i img:
+
+- txt serà la propietat que emmagatzemarà el text de l'escena
+
+- img serà la propietat que emmagatzemarà la imatge de fons que es veurà a la pantalla.
+
+Pots descarregar les imatges de fons a través ->d'aquest enllaç.
+Com en l'array ja tens la frase a mostrar juntament amb la seva imatge, et resultarà senzill dinamitzar l'atribut "src" de la imatge.

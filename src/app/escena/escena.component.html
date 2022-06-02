@@ -1,22 +1,40 @@
-<p>variable definida en el padre, <i>home.ts</i>: <b>{{saludo}}</b> y mostrada desde el hijo <i>escena.html</i><br>
-    currentSentence={{currentSentence}}</p>
+<div style="height: 100%; ">
+    <div class="h-100 bgImagen" style="background:  url('../../assets/img/{{imagenFondo}}') 0% 0% / cover;">
 
-<div class="row">
 
-    <div class="d-grid col-6 mx-auto">
-        <button class="btn btn-secondary" type="button" (click)="anterior()">Anterior</button>
-    </div>
-    <div class="d-grid col-6 mx-auto">
-        <button class="btn btn-secondary" type="button" (click)="siguiente()">Siguiente</button>
-    </div>
+    <!--
+        <p>variable definida en el padre, <i>home.ts</i>: <b>{{saludo}}</b> y mostrada desde el hijo
+            <i>escena.html</i><br>
+            currentSentence={{currentSentence}}
+        </p>
+    -->
 
-</div>
+        <div class="row">
 
-<span *ngFor="let frase of frases">
-    <div class="card mt-3 "
-        [ngClass]="{'seleccionada': (frase.id==currentSentence), 'noSeleccionada': !(frase.id==currentSentence)}">
-        <div class="card-body ">
-            {{frase.texto}}
+            <div class="d-grid col-6 mt-2 mx-auto">
+                <button class="btn btn-secondary" type="button" (click)="anterior()">Anterior</button>
+            </div>
+            <div class="d-grid col-6 mt-2 mx-auto">
+                <button class="btn btn-secondary" type="button" (click)="siguiente()">Siguiente</button>
+            </div>
+
         </div>
+
+        <div class="row">
+            <span *ngFor="let frase of frases">
+                <div class="col ms-2 me-2">
+                    <div class="card mt-3 opacity-75"
+                        [ngClass]="{'seleccionada': (frase.id==currentSentence), 'noSeleccionada': !(frase.id==currentSentence)}">
+                        <div class="card-body ">
+                            {{frase.texto}}
+                        </div>
+                    </div>
+                </div>
+            </span>
+
+        </div>
+
+
+
     </div>
-</span>
+</div>

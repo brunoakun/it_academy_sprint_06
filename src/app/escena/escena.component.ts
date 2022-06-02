@@ -15,6 +15,7 @@ export class EscenaComponent implements OnInit {
 
   // Propiedades
   currentSentence: number = 1;
+  imagenFondo: string = '1.jpg';
 
   // Constructor
   constructor() { }
@@ -24,11 +25,17 @@ export class EscenaComponent implements OnInit {
   }
 
   anterior(): void {
-    if (this.currentSentence > 1) this.currentSentence--;
+    if (this.currentSentence > 1) {
+      this.currentSentence--;
+      this.imagenFondo = this.frases[this.currentSentence-1].img;
+    }
   }
 
   siguiente(): void {
-    if (this.currentSentence < this.frases.length) this.currentSentence++;
+    if (this.currentSentence < this.frases.length) {
+      this.currentSentence++;
+      this.imagenFondo = this.frases[this.currentSentence-1].img;
+    }
   }
 
 }

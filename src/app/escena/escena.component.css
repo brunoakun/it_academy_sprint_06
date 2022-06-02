@@ -21,3 +21,8 @@
 .noSeleccionada {
     background-color: white;
 }
+
+.bgImagen {    
+    min-height: 100vh; 
+    height: 100%;
+  }
